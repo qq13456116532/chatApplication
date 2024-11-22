@@ -1,0 +1,1503 @@
+{
+  "Version": 1,
+  "Hash": "RRu/uwCIHtuvincc7z8jXktZAsp5mP/u0X+xpOPAkIE=",
+  "Source": "MyChatApp",
+  "BasePath": "/",
+  "Mode": "Root",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MyChatApp\\wwwroot",
+      "Source": "MyChatApp",
+      "ContentRoot": "E:\\VSproject\\MyChatApp\\MyChatApp\\wwwroot\\",
+      "BasePath": "/",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\10293\\.nuget\\packages\\mudblazor\\7.15.0\\staticwebassets\\MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\10293\\.nuget\\packages\\mudblazor\\7.15.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mhumzvqd1g",
+      "Integrity": "2gItJ0j/o5RSWg7VYqCOBpSPI1dxTOG+mnEzWt7EvYw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\10293\\.nuget\\packages\\mudblazor\\7.15.0\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\10293\\.nuget\\packages\\mudblazor\\7.15.0\\staticwebassets\\MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\10293\\.nuget\\packages\\mudblazor\\7.15.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rnojub5shy",
+      "Integrity": "lz0Xidl9yw53lEeYs4XMU39zSRQzpCIyWOQSAG0/0GU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\10293\\.nuget\\packages\\mudblazor\\7.15.0\\staticwebassets\\MudBlazor.min.js"
+    },
+    {
+      "Identity": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\0wz98yz2xy-rnojub5shy.gz",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\10293\\.nuget\\packages\\mudblazor\\7.15.0\\staticwebassets\\MudBlazor.min.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "dk8j3iybj5",
+      "Integrity": "4wLiWt+hjBSHQm4LZp1HuYpuGHh0C71GVep0cTYkHdI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\10293\\.nuget\\packages\\mudblazor\\7.15.0\\staticwebassets\\MudBlazor.min.js"
+    },
+    {
+      "Identity": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\1f79vjf5tm-qgzxkgue6v.gz",
+      "SourceId": "MyChatApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "index#[.{fingerprint=qgzxkgue6v}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\VSproject\\MyChatApp\\MyChatApp\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "z6w6yes2h2",
+      "Integrity": "hX0z9aRoScO7V1lxnQI5QtkB+IydUWexy5xd14ON7UU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "E:\\VSproject\\MyChatApp\\MyChatApp\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\sygtajm2we-5ztp8epm30.gz",
+      "SourceId": "MyChatApp",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "MyChatApp#[.{fingerprint=5ztp8epm30}]?.styles.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MyChatApp.styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5bioalwsz7",
+      "Integrity": "T8+O7weNChzNnhM268Xh6v+NJ2cxaTYHA7O5O7uVkpI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MyChatApp.styles.css"
+    },
+    {
+      "Identity": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\tzxjg6is5z-mhumzvqd1g.gz",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\10293\\.nuget\\packages\\mudblazor\\7.15.0\\staticwebassets\\MudBlazor.min.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "750f4eamv2",
+      "Integrity": "e0odARo5WTdd1QrI6+iEl/0LONnlAaAnEGSWQQ696m0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\10293\\.nuget\\packages\\mudblazor\\7.15.0\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\y2yr0e4zge-5ztp8epm30.gz",
+      "SourceId": "MyChatApp",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "MyChatApp#[.{fingerprint=5ztp8epm30}]!.bundle.scp.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\MyChatApp.bundle.scp.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5bioalwsz7",
+      "Integrity": "T8+O7weNChzNnhM268Xh6v+NJ2cxaTYHA7O5O7uVkpI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\MyChatApp.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MyChatApp.styles.css",
+      "SourceId": "MyChatApp",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\",
+      "BasePath": "/",
+      "RelativePath": "MyChatApp#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "5ztp8epm30",
+      "Integrity": "/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MyChatApp.styles.css"
+    },
+    {
+      "Identity": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\MyChatApp.bundle.scp.css",
+      "SourceId": "MyChatApp",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\",
+      "BasePath": "/",
+      "RelativePath": "MyChatApp#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "5ztp8epm30",
+      "Integrity": "/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\MyChatApp.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\VSproject\\MyChatApp\\MyChatApp\\wwwroot\\images\\user.png",
+      "SourceId": "MyChatApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\VSproject\\MyChatApp\\MyChatApp\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/user#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8zppxjznuu",
+      "Integrity": "xCzXYcaqd9lFyx1Dqv8hLERU+tWM5cDgIxQJgB0lo50=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\user.png"
+    },
+    {
+      "Identity": "E:\\VSproject\\MyChatApp\\MyChatApp\\wwwroot\\index.html",
+      "SourceId": "MyChatApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\VSproject\\MyChatApp\\MyChatApp\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qgzxkgue6v",
+      "Integrity": "NppPcel+WRngMZTxHaD8iZOIBOdLqAgjQFW/jux2mNE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css",
+      "AssetFile": "C:\\Users\\10293\\.nuget\\packages\\mudblazor\\7.15.0\\staticwebassets\\MudBlazor.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "580975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2gItJ0j/o5RSWg7VYqCOBpSPI1dxTOG+mnEzWt7EvYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Oct 2024 20:30:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2gItJ0j/o5RSWg7VYqCOBpSPI1dxTOG+mnEzWt7EvYw="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\tzxjg6is5z-mhumzvqd1g.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000015997440"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62509"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e0odARo5WTdd1QrI6+iEl/0LONnlAaAnEGSWQQ696m0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Oct 2024 20:30:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"2gItJ0j/o5RSWg7VYqCOBpSPI1dxTOG+mnEzWt7EvYw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2gItJ0j/o5RSWg7VYqCOBpSPI1dxTOG+mnEzWt7EvYw="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css.gz",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\tzxjg6is5z-mhumzvqd1g.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62509"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e0odARo5WTdd1QrI6+iEl/0LONnlAaAnEGSWQQ696m0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Oct 2024 20:30:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e0odARo5WTdd1QrI6+iEl/0LONnlAaAnEGSWQQ696m0="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js",
+      "AssetFile": "C:\\Users\\10293\\.nuget\\packages\\mudblazor\\7.15.0\\staticwebassets\\MudBlazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49823"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lz0Xidl9yw53lEeYs4XMU39zSRQzpCIyWOQSAG0/0GU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Oct 2024 20:30:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lz0Xidl9yw53lEeYs4XMU39zSRQzpCIyWOQSAG0/0GU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\0wz98yz2xy-rnojub5shy.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000093773443"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10663"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4wLiWt+hjBSHQm4LZp1HuYpuGHh0C71GVep0cTYkHdI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Oct 2024 20:30:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"lz0Xidl9yw53lEeYs4XMU39zSRQzpCIyWOQSAG0/0GU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lz0Xidl9yw53lEeYs4XMU39zSRQzpCIyWOQSAG0/0GU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js.gz",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\0wz98yz2xy-rnojub5shy.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10663"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4wLiWt+hjBSHQm4LZp1HuYpuGHh0C71GVep0cTYkHdI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Oct 2024 20:30:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4wLiWt+hjBSHQm4LZp1HuYpuGHh0C71GVep0cTYkHdI="
+        }
+      ]
+    },
+    {
+      "Route": "images/user.8zppxjznuu.png",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\wwwroot\\images\\user.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3003"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xCzXYcaqd9lFyx1Dqv8hLERU+tWM5cDgIxQJgB0lo50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:32:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8zppxjznuu"
+        },
+        {
+          "Name": "label",
+          "Value": "images/user.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCzXYcaqd9lFyx1Dqv8hLERU+tWM5cDgIxQJgB0lo50="
+        }
+      ]
+    },
+    {
+      "Route": "images/user.png",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\wwwroot\\images\\user.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3003"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xCzXYcaqd9lFyx1Dqv8hLERU+tWM5cDgIxQJgB0lo50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:32:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCzXYcaqd9lFyx1Dqv8hLERU+tWM5cDgIxQJgB0lo50="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\1f79vjf5tm-qgzxkgue6v.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001945525292"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "513"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hX0z9aRoScO7V1lxnQI5QtkB+IydUWexy5xd14ON7UU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:05:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"NppPcel+WRngMZTxHaD8iZOIBOdLqAgjQFW/jux2mNE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NppPcel+WRngMZTxHaD8iZOIBOdLqAgjQFW/jux2mNE="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "981"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NppPcel+WRngMZTxHaD8iZOIBOdLqAgjQFW/jux2mNE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:05:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NppPcel+WRngMZTxHaD8iZOIBOdLqAgjQFW/jux2mNE="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\1f79vjf5tm-qgzxkgue6v.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "513"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hX0z9aRoScO7V1lxnQI5QtkB+IydUWexy5xd14ON7UU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:05:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hX0z9aRoScO7V1lxnQI5QtkB+IydUWexy5xd14ON7UU="
+        }
+      ]
+    },
+    {
+      "Route": "index.qgzxkgue6v.html",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\1f79vjf5tm-qgzxkgue6v.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001945525292"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "513"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hX0z9aRoScO7V1lxnQI5QtkB+IydUWexy5xd14ON7UU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:05:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"NppPcel+WRngMZTxHaD8iZOIBOdLqAgjQFW/jux2mNE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qgzxkgue6v"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NppPcel+WRngMZTxHaD8iZOIBOdLqAgjQFW/jux2mNE="
+        }
+      ]
+    },
+    {
+      "Route": "index.qgzxkgue6v.html",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "981"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NppPcel+WRngMZTxHaD8iZOIBOdLqAgjQFW/jux2mNE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:05:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qgzxkgue6v"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NppPcel+WRngMZTxHaD8iZOIBOdLqAgjQFW/jux2mNE="
+        }
+      ]
+    },
+    {
+      "Route": "index.qgzxkgue6v.html.gz",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\1f79vjf5tm-qgzxkgue6v.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "513"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hX0z9aRoScO7V1lxnQI5QtkB+IydUWexy5xd14ON7UU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:05:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qgzxkgue6v"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hX0z9aRoScO7V1lxnQI5QtkB+IydUWexy5xd14ON7UU="
+        }
+      ]
+    },
+    {
+      "Route": "MyChatApp.5ztp8epm30.bundle.scp.css",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\y2yr0e4zge-5ztp8epm30.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001607717042"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "621"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T8+O7weNChzNnhM268Xh6v+NJ2cxaTYHA7O5O7uVkpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ztp8epm30"
+        },
+        {
+          "Name": "label",
+          "Value": "MyChatApp.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY="
+        }
+      ]
+    },
+    {
+      "Route": "MyChatApp.5ztp8epm30.bundle.scp.css",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\MyChatApp.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1796"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ztp8epm30"
+        },
+        {
+          "Name": "label",
+          "Value": "MyChatApp.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY="
+        }
+      ]
+    },
+    {
+      "Route": "MyChatApp.5ztp8epm30.bundle.scp.css.gz",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\y2yr0e4zge-5ztp8epm30.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "621"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T8+O7weNChzNnhM268Xh6v+NJ2cxaTYHA7O5O7uVkpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ztp8epm30"
+        },
+        {
+          "Name": "label",
+          "Value": "MyChatApp.bundle.scp.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T8+O7weNChzNnhM268Xh6v+NJ2cxaTYHA7O5O7uVkpI="
+        }
+      ]
+    },
+    {
+      "Route": "MyChatApp.5ztp8epm30.styles.css",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\sygtajm2we-5ztp8epm30.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001607717042"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "621"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T8+O7weNChzNnhM268Xh6v+NJ2cxaTYHA7O5O7uVkpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ztp8epm30"
+        },
+        {
+          "Name": "label",
+          "Value": "MyChatApp.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY="
+        }
+      ]
+    },
+    {
+      "Route": "MyChatApp.5ztp8epm30.styles.css",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MyChatApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1796"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ztp8epm30"
+        },
+        {
+          "Name": "label",
+          "Value": "MyChatApp.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY="
+        }
+      ]
+    },
+    {
+      "Route": "MyChatApp.5ztp8epm30.styles.css.gz",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\sygtajm2we-5ztp8epm30.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "621"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T8+O7weNChzNnhM268Xh6v+NJ2cxaTYHA7O5O7uVkpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ztp8epm30"
+        },
+        {
+          "Name": "label",
+          "Value": "MyChatApp.styles.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T8+O7weNChzNnhM268Xh6v+NJ2cxaTYHA7O5O7uVkpI="
+        }
+      ]
+    },
+    {
+      "Route": "MyChatApp.bundle.scp.css",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\y2yr0e4zge-5ztp8epm30.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001607717042"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "621"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T8+O7weNChzNnhM268Xh6v+NJ2cxaTYHA7O5O7uVkpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY="
+        }
+      ]
+    },
+    {
+      "Route": "MyChatApp.bundle.scp.css",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\MyChatApp.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1796"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY="
+        }
+      ]
+    },
+    {
+      "Route": "MyChatApp.bundle.scp.css.gz",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\y2yr0e4zge-5ztp8epm30.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "621"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T8+O7weNChzNnhM268Xh6v+NJ2cxaTYHA7O5O7uVkpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T8+O7weNChzNnhM268Xh6v+NJ2cxaTYHA7O5O7uVkpI="
+        }
+      ]
+    },
+    {
+      "Route": "MyChatApp.styles.css",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\sygtajm2we-5ztp8epm30.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001607717042"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "621"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T8+O7weNChzNnhM268Xh6v+NJ2cxaTYHA7O5O7uVkpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY="
+        }
+      ]
+    },
+    {
+      "Route": "MyChatApp.styles.css",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MyChatApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1796"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/4tmLCTtVs37ezWOGdmJgDiGZQTnwwwC7564eLKwzOY="
+        }
+      ]
+    },
+    {
+      "Route": "MyChatApp.styles.css.gz",
+      "AssetFile": "E:\\VSproject\\MyChatApp\\MyChatApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\sygtajm2we-5ztp8epm30.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "621"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T8+O7weNChzNnhM268Xh6v+NJ2cxaTYHA7O5O7uVkpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 20 Nov 2024 07:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T8+O7weNChzNnhM268Xh6v+NJ2cxaTYHA7O5O7uVkpI="
+        }
+      ]
+    }
+  ]
+}

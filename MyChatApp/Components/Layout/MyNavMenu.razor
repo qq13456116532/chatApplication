@@ -1,0 +1,46 @@
+@using Service
+@inject Service.UserState UserState
+<MudNavMenu>
+    <MudNavLink Href="/chat" Match="NavLinkMatch.All">
+    <div Class="d-flex justify-space-around flex-wrap mt-4">
+        @if (UserState.hasMsgList.Contains("server"))
+        {
+            <MudBadge  Dot="true" Color="Color.Error" Class="mx-6 my-4" >
+                <MudText>Server</MudText>
+            </MudBadge>
+        }else{
+            <MudText>Server</MudText>
+        }
+    </div>
+    </MudNavLink>
+
+    @foreach (var user in UserState.Users)
+    {
+        <MudNavLink Href="@($"/chat?user={user.Id}")" Match="NavLinkMatch.All">
+        <div Class="d-flex justify-space-around flex-wrap mt-4">
+            @if (UserState.hasMsgList.Contains(user.Id))
+            {
+                <MudBadge  Dot="true" Color="Color.Error" Class="mx-6 my-4" >
+                    <MudText>@user.Id.PadRight(6).Substring(0, 6)</MudText>
+                </MudBadge>
+            } else{
+                <MudText>@user.Id.PadRight(6).Substring(0, 6)</MudText>
+            }
+            </div>
+        </MudNavLink>
+    }
+
+</MudNavMenu>
+
+@code{
+    protected override void OnInitialized()
+    {
+        UserState.OnChange += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        UserState.OnChange -= StateHasChanged;
+    }
+}
+

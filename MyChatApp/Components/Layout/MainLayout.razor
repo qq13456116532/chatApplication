@@ -1,0 +1,71 @@
+﻿@inherits LayoutComponentBase
+@inject IDialogService DialogService
+@using Service
+@inject ChatService ChatService
+
+<MudThemeProvider @bind-IsDarkMode="@_isDarkMode"/>
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudAppBar>
+        <MudIconButton Style="Height: 10vh" Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        My Application
+        <MudSpacer />
+
+        <MudMenu ActivationEvent="@MouseEvent.MouseOver" AnchorOrigin="Origin.BottomCenter" TransformOrigin="Origin.TopCenter">
+            <ActivatorContent>
+                <MudAvatar>
+                    <MudImage Src="@ChatService.avatarUrl" Alt="User Image"></MudImage>
+                </MudAvatar> 
+            </ActivatorContent>
+            <ChildContent>
+                <MudMenuItem OnClick="@ShowProfilePopover">Profile</MudMenuItem>
+                <MudMenuItem>Theme
+                    
+                </MudMenuItem>
+                <MudMenuItem>Usage</MudMenuItem>
+                <MudMenuItem>Sign Out</MudMenuItem>
+            </ChildContent>
+        </MudMenu>
+        <MudToggleIconButton @bind-Toggled="_isDarkMode"
+                     Icon="@Icons.Material.Filled.DarkMode"
+                     Color="@Color.Dark"
+                     ToggledIcon="@Icons.Material.Filled.LightMode"
+                     ToggledColor="@Color.Warning"
+                     title="@(_isDarkMode ? "Dark" : "Light")" />
+
+
+    </MudAppBar>
+    <MudDrawer @bind-Open="@_drawerOpen">
+        <MyNavMenu/>
+    </MudDrawer>
+    <MudMainContent >
+        @Body
+    </MudMainContent>
+</MudLayout>
+
+@code {
+    bool _drawerOpen = true;
+    private bool _isDarkMode = true;
+
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+    private async void ShowProfilePopover()
+    {
+        var parameters = new DialogParameters<ProfilePopover> { { x => x.userName, ChatService.GetUserId() },{x=>x.AvatarUrl,ChatService.avatarUrl} };
+        var dialog = await DialogService.ShowAsync<ProfilePopover>("User Profile", parameters);
+        var result = await dialog.Result;
+        if (!result.Canceled)
+        {
+            ChatService.avatarUrl = result.Data.ToString(); // 获取返回的 AvatarUrl
+            StateHasChanged();
+        }
+    }
+
+}

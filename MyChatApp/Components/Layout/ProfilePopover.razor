@@ -1,0 +1,105 @@
+@using Service
+@inject ChatService ChatService
+
+<MudDialog>
+    <TitleContent>
+        <MudText Typo="Typo.h6">
+            <MudIcon Icon="@Icons.Material.Filled.Person" Class="mr-3 mb-n1"/>
+            Profile Setting
+        </MudText>
+    </TitleContent>
+    <DialogContent>
+        <MudGrid Justify="Justify.Center">
+            <MudItem xs=4 Style="text-align: center;">
+                <MudButton  OnClick="@SelectImage" Style="padding: 0; border: none; background: none;">
+                    <MudAvatar  Size="Size.Large" Class="mb-2">
+                        <MudImage Src="@AvatarUrl"  Alt="User Image"></MudImage>
+                    </MudAvatar>
+                </MudButton>
+            </MudItem>
+            <MudItem xs=12>
+                <MudText Align="Align.Center" Typo="Typo.h6">@userName</MudText>
+            </MudItem>
+        </MudGrid>
+        
+        
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">关闭</MudButton>
+        @* <MudButton Color="Color.Error" OnClick="DeleteServer">Delete Server</MudButton> *@
+    </DialogActions>
+</MudDialog>
+
+@code {
+    [CascadingParameter]
+    private MudDialogInstance MudDialog { get; set; }
+
+    [Parameter]
+    public string userName{get;set;}
+    [Parameter]
+    public string AvatarUrl {get;set;}
+
+    private void Cancel() {
+        MudDialog.Close(DialogResult.Ok(AvatarUrl));
+    }
+
+    private void DeleteServer()
+    {
+        //In a real world scenario this bool would probably be a service to delete the item from api/database
+        @* Snackbar.Add("Server Deleted", Severity.Success);
+        MudDialog.Close(DialogResult.Ok(Server.Id)); *@
+    }
+    private async Task SelectImage()
+    {
+        try
+        {
+            // 调用 MAUI 的文件选择器
+            var result = await FilePicker.Default.PickAsync(new PickOptions
+            {
+                PickerTitle = "选择头像图片",
+                FileTypes = FilePickerFileType.Images
+            });
+
+            if (result != null)
+            {
+                // 使用选中的图片
+                using var stream = await result.OpenReadAsync();
+
+                // 获取运行时的根目录
+                var runtimeRoot = AppContext.BaseDirectory;
+                //to do 这里选择图片放在本地的启动文件夹，但是只能是同一个机器上有效，如果是多机器之间，那么需要修改一下
+                // 确保路径指向项目的 wwwroot/images
+                var imagesPath = Path.Combine(runtimeRoot, "wwwroot", "images");
+
+                // 创建目录（如果不存在）
+                if (!Directory.Exists(imagesPath))
+                {
+                    Directory.CreateDirectory(imagesPath);
+                }
+
+                // 生成唯一文件名
+                var fileName = $"{Guid.NewGuid()}{Path.GetExtension(result.FileName)}";
+                var filePath = Path.Combine(imagesPath, fileName);
+
+                // 保存文件
+                using var fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write);
+                await stream.CopyToAsync(fileStream);
+
+                // 更新头像 URL（相对路径）
+                AvatarUrl = $"/images/{fileName}";
+                await ChatService.UpdateAvatar(AvatarUrl);
+
+                // 刷新组件
+                StateHasChanged();
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"图片选择出错: {ex.Message}");
+        }
+    }
+
+
+
+
+}

@@ -1,0 +1,207 @@
+﻿@page "/chat"
+@page "/"
+@using Service
+@using System.Text.Json
+@inject UserState UserState
+@inject NavigationManager Navigation
+@inject ChatService ChatService
+@using Microsoft.AspNetCore.WebUtilities
+
+<MudGrid Spacing="1">
+    @if (!string.IsNullOrEmpty(TargetUser))
+    {
+        <MudItem Style="Height: 5vh" xs="12"><MudText Align="Align.Center" Typo="Typo.h6">Chat With @TargetUser.Substring(0, Math.Min(6, TargetUser.Length)) </MudText></MudItem>
+    }
+    <MudItem xs="12">
+        <MudContainer Fixed="true">
+            <MudPaper Height="70vh" Width="100%" Square="true" Class="mud-theme-primary" Style="overflow-y: auto;">
+                @foreach (var msg in messages)
+                {
+                    @if (msg.sender == "server")  @* 居中显示的系统消息  *@
+                    {
+                        <MudGrid Justify="Justify.Center" AlignItems="Center">
+                            <MudItem xs="12">
+                                <MudText Typo="Typo.h4" Align="Align.Center">@msg.data</MudText>
+                            </MudItem>
+                        </MudGrid>
+                    }
+                    else if (msg.receiver == ChatService.GetUserId()) @* 如果是发给自己的消息，那就是别的发出的 -->*@
+                    {
+                        <MudGrid Spacing="2" Justify="Justify.FlexStart" AlignItems="Center">
+                            <MudItem xs="1">
+                                <div style="text-align: right;">
+                                    <MudAvatar Size="Size.Small" >
+                                        <MudImage Src="@UserState.GetUserById(msg.sender).avatar" Alt="User Image"></MudImage>
+                                    </MudAvatar>
+                                </div>
+                            </MudItem>
+                            <MudItem xs="11">
+                                <MudText Typo="Typo.body1" Align="Align.Left">@msg.data</MudText>
+                            </MudItem>
+                        </MudGrid>
+                    }
+                    else @*<!-- 如果是自己的消息 -->*@
+                    {
+                        <MudGrid Spacing="2" Justify="Justify.FlexEnd" AlignItems="Center">
+                            <MudItem xs="11">
+                                <MudText Typo="Typo.body1" Align="Align.Right">@msg.data</MudText>
+                            </MudItem>
+                            <MudItem xs="1">
+                                <MudAvatar Size="Size.Small">
+                                    <MudImage Src="@ChatService.avatarUrl" Alt="User Image"></MudImage>
+                                </MudAvatar>
+                            </MudItem>
+                        </MudGrid> 
+                    }
+                }
+            </MudPaper>
+        </MudContainer>
+    </MudItem>
+    <MudItem xs="9" Style="display: flex; align-items: center;">
+        <MudTextField @bind-Value="messageInput" Label="Outlined" Variant="Variant.Outlined" FullWidth="true"></MudTextField>
+    </MudItem>
+
+    <MudItem xs="3" Style="display: flex; align-items: center;">
+        <MudButton @onclick="SendMessage" Variant="Variant.Filled" Color="Color.Primary" FullWidth="true">Primary</MudButton>
+    </MudItem>
+</MudGrid>
+
+
+@code{
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "user")]
+    public string? TargetUser {get;set;}
+    private string messageInput=string.Empty;
+    private List<Message> messages = new List<Message>();
+    protected void LoadChatMessages(){
+        if(TargetUser == null)
+            TargetUser = "server";
+        UserState.RemoveHasMsg(TargetUser);
+        //根据 TargetUser 加载相关聊天内容（例如通过 WebSocket 请求服务端数据）
+        messages = ChatService.GetHistoryMsgList(TargetUser);
+    }
+    protected void SaveChatMessages(){
+        //保存相关聊天内容
+        if(TargetUser == null)
+            TargetUser = "server";
+        ChatService.SaveChatMessages(TargetUser,messages);
+    }
+    protected async Task HandlereceiveMesg(Message message){
+        switch (message.sender)
+        {
+            case "server":
+                if(message.command == "userList")
+                {
+                    // 获取原始字符串
+                    var rawData = message.data; // 直接将 JsonElement 转换为字符串
+                    // 分割逗号分隔的字符串
+                    var userList = rawData
+                        .Split(',') // 根据逗号分割
+                        .Select(item => {
+                            var parts = item.Split('@'); // 根据@分割
+                            if(parts.Length>1){
+                                return new User
+                                {
+                                    Id = parts[0],
+                                    avatar = parts.Length > 1 ? parts[1] : string.Empty // 防止数组越界
+                                };
+                            }else 
+                                return null;
+                        })
+                        .Where(user => user != null) // 移除无效项
+                        .ToList();
+                    if (userList.Count > 0)
+                    {
+                        //如果是用户列表那不能直接存messages
+                        var newMsg = new Message(){
+                            sender="server",
+                            receiver=ChatService.GetUserId(),
+                            command="userList",
+                            data=$"The UserList has changed,Now is:  {string.Join(",",userList.Select(item=>item.Id).ToList())}"
+                        };
+                        //messages.Add($"The UserList has changed,Now is:  {string.Join(",",userList)}");
+                        messages.Add(newMsg);
+                    }
+                    UserState.UpdateUsers(userList);
+                    StateHasChanged();
+                }else if(message.command == "brodcastMes")
+                {
+                    var chatMessage = message.data;
+                    //当前不在server页面
+                    if(TargetUser!=null && TargetUser!="server"){
+                        UserState.AddHasMsg("server");
+                        ChatService.AddBackMessage(message);
+                    }else{
+                        if (!string.IsNullOrWhiteSpace(chatMessage))
+                        {
+                            @* messages.Add($"the server: {chatMessage}"); *@
+                            messages.Add(message);
+                        }
+                    }                
+                }
+                break;
+            default: //这里就是处理别的用户转发的地方
+                //发送的用户
+                var otherUserId = message.sender;
+                if(otherUserId == TargetUser){
+                    if (!string.IsNullOrWhiteSpace(message.data))
+                    {
+                        messages.Add(message);
+                        await InvokeAsync(StateHasChanged);
+                    }
+                }else{
+                    //不在当前用户页面的情况
+                    UserState.AddHasMsg(otherUserId);
+                    ChatService.AddBackMessage(message);
+                }
+                break;
+        }
+        SaveChatMessages();
+        await InvokeAsync(StateHasChanged);
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        ChatService.OnChange += StateHasChanged;
+        await ChatService.ConnectAsync("ws://localhost:8008/ws");
+        // 启动监听用户列表更新
+        await ChatService.ListenAsync(HandlereceiveMesg);
+    }
+    // 在参数变化时执行逻辑
+    protected override async Task OnParametersSetAsync(){
+        messageInput = string.Empty;
+        @* messages.Clear(); *@
+        LoadChatMessages();
+        await InvokeAsync(StateHasChanged);
+        
+    }
+    private async Task SendMessage()
+    {
+        if (!string.IsNullOrWhiteSpace(messageInput))
+        {
+            //messages.Add($"你: {messageInput}"); // 添加用户的消息
+            Message message =  new Message(){
+                sender=ChatService.GetUserId(),
+                receiver = TargetUser??"server" ,
+                command = "",
+                data = messageInput
+            };
+            messages.Add(message);
+            await ChatService.SendMessageAsync(message);
+            messageInput = string.Empty;
+            SaveChatMessages();
+        }
+    }
+
+
+    public async Task DisposeAsync()
+    {
+         ChatService.OnChange -= StateHasChanged;
+        await ChatService.DisconnectAsync();
+    }
+}
+<style>
+    *{
+        @* border: red solid 1px; *@
+        padding: 1px;
+    }
+</style>
