@@ -1,5 +1,7 @@
 # Go-C# WebSocket Chat Application
 
+[中文版](README_zh.md)
+
 ## Project Introduction
 
 This is a WebSocket chat application built with Go and C#. The backend uses Go to provide WebSocket services, while the frontend leverages the Maui Blazor hybrid framework for a modern user interface. The application supports real-time messaging, dynamic user list updates, and broadcast messages. It is implemented via WebSocket for bidirectional communication, making it suitable for learning purposes and small-scale chat applications.

@@ -1,5 +1,7 @@
 # Go-C# WebSocket 聊天应用
 
+[English Version](README.md)
+
 ## 项目介绍
 
 这是一个基于 Go 和 C# 的 WebSocket 聊天应用。后端使用 Go 提供 WebSocket 服务，软件端使用Maui Blazor hybrid搭建界面。支持用户实时聊天、用户列表动态更新和广播消息。通过 WebSocket 实现双向通信，适合用于学习和小型聊天应用的开发。
